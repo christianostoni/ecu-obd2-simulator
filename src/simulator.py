@@ -62,6 +62,9 @@ class obd2_simulator:
                     print("risposta inviata correttamente")
                 except Exception as e:
                     print(f"errore: {e}")
+            
+            else:
+                print("NO DATA")
 
 
 

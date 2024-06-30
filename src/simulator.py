@@ -77,6 +77,7 @@ class obd2_simulator:
                     if msg is not None:
                         self.requesting(msg)#se non è vuoto lo passo alla funzione che gestisce le richieste
                 except Exception as e: #se c'è un eccezzione esco dal ciclo e chiudo il bus. 
+                    print("error in get_message()")
                     print(e)
                     break
         finally:

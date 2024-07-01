@@ -4,7 +4,6 @@
 This ECU simulator uses an MCP2515 CAN transceiver to handle OBD2 requests and send responses. 
 
 ## Supported Modes and PIDs
-Currently, the simulator supports only mode `01` and the following PIDs:
 1. `00` - Supported PIDs
 2. `04` - Calculated Engine Load
 3. `05` - Engine Coolant Temperature
@@ -15,6 +14,18 @@ Currently, the simulator supports only mode `01` and the following PIDs:
 8. `0E` - Timing Advance
 9. `0F` - Intake Air Temperature
 10. `10` - Mass Air Flow Rate
+11. `11` - Absolute Throttle Position
+12. `12` - Secondary Air Status
+13. `13` - Location of Oxygen Sensor
+14. `14` - Bank 1, Sensor 1 Oxygen Sensor
+15. `15` - Bank 1, Sensor 2 Oxygen Sensor
+16. `16` - Bank 1, Sensor 3 Oxygen Sensor
+17. `17` - Bank 1, Sensor 4 Oxygen Sensor
+18. `18` - Bank 2, Sensor 1 Oxygen Sensor
+19. `19` - Bank 2, Sensor 2 Oxygen Sensor
+20. `1A` - Bank 2, Sensor 3 Oxygen Sensor
+21. `1B` - Bank 2, Sensor 4 Oxygen Sensor
+22. `1F` - Time Since Engine Start
 
 (*Refer to the `pid00` request in the code to get supported PIDs*)
 

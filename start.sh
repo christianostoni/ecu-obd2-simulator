@@ -1,9 +1,9 @@
 #!usr/bin/bash
 
 USER="pi"
-SCRIPT_FILE="/home/${USER}/obd2_simulator_project/src"
-VENV_DIR="/home/${USER}/obd2_simulator_project/venv"
-PROJECT_DIR="/home/${USER}/obd2_simulator_project"
+SCRIPT_FILE="/home/${USER}/ecu-obd2-simulator/src"
+VENV_DIR="/home/${USER}/ecu-obd2-simulator/venv"
+PROJECT_DIR="/home/${USER}/ecu-obd2-simulator"
 
 if ! [ -d ${SCRIPT_FILE} ];
 then

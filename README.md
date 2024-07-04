@@ -44,21 +44,18 @@ Please refer to the `requirements.txt` file for the necessary software dependenc
 
 ### Software Setup
 1. Clone the repository:
-    ```
+    ```bash
     git clone https://github.com/christianostoni/ecu-obd2-simulator
     ```
 2. Navigate to the project directory:
-    ```
+    ```bash
     cd ecu-obd2-simulator
     ```
-3. Install the required dependencies:
+3. Assign execution rights to the start script:
+    ```bash
+    chmod u+x start.sh
     ```
-    pip install -r requirements.txt
-    ```
-
-### Running the Simulator
-1. Ensure your Raspberry Pi is set up to use the MCP2515 CAN transceiver.
-2. Run the simulator script:
-    ```
-    python3 main.py
+4. Start the simulator:
+    ```bash
+    ./start.sh
     ```

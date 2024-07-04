@@ -3,7 +3,7 @@ Description= Start the obd2 simulator
 Documentation= https://github.com/christianostoni/ecu-obd2-simulator
 [Service]
 Type=simple
-WorkingDirectory= /home/pi/obd2_simulator_project
-ExecStart= /home/pi/obd2_simulator_project/venv/bin/python3 /home/pi/obd2_simulator_project/src/main.py
+WorkingDirectory= /home/pi/ecu-obd2-simulator
+ExecStart= /home/pi/ecu-obd2-simulator/venv/bin/python3 /home/pi/ecu-obd2-simulator/src/main.py
 [Install]
 WantedBy= multi-user.target

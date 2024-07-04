@@ -1,4 +1,3 @@
-#!usr/bin/bash
 
 USER="pi"
 SCRIPT_FILE="/home/${USER}/ecu-obd2-simulator/src"
@@ -11,7 +10,7 @@ then
     exit
 fi
 
-pip3 install virtualenv
+pip3 install virtualenv --break-system-packages
 
 if ! [ -d ${VENV_DIR} ];
 then    
@@ -24,16 +23,19 @@ then
 fi
 
 cd ${PROJECT_DIR}
-if ![ -e requirements.txt];
+if ! [ -e requirements.txt ];
 then   
     echo "requirement non trovato"
     exit
 fi
 
-pip install -r requirements.txt
+pip install -r requirements.txt --break-system-packages
 
-if ![ -e /etc/systemd/system/obd2_simulator.service ];
+if ! [ -e /etc/systemd/system/obd2_simulator.service ];
 then
+    sudo cp obd2_simulator.service /etc/systemd/system/
+else
+    sudo rm /etc/systemd/system/obd2_simulator.service
     sudo cp obd2_simulator.service /etc/systemd/system/
 fi
 

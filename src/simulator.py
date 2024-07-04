@@ -167,8 +167,6 @@ class obd2_simulator:
             else:
                 print("NO DATA")
 
-
-
     def get_message(self):
         try:
             while True:

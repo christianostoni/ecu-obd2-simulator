@@ -4,6 +4,7 @@ Documentation= https://github.com/christianostoni/ecu-obd2-simulator
 [Service]
 Type=simple
 WorkingDirectory= /home/pi/ecu-obd2-simulator
+ExecStartPre=sudo ip link set can0 up type can bitrate 500000
 ExecStart= /home/pi/ecu-obd2-simulator/venv/bin/python3 /home/pi/ecu-obd2-simulator/src/main.py
 [Install]
 WantedBy= multi-user.target

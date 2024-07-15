@@ -39,7 +39,6 @@ else
     sudo cp obd2_simulator.service /etc/systemd/system/
 fi
 
-sudo ip link set can0 up type can bitrate 500000
 sudo systemctl enable obd2_simulator.service
 sudo systemctl start obd2_simulator.service
 
